@@ -1,9 +1,4 @@
 class Vehicle:
-    brand=" "
-    model=" "
-    year=0
-    rental_price_per_day=0
-    
     #Constructor
     def __init__(self, brand,model, year, rental_price_per_day):
         self.brand = brand
