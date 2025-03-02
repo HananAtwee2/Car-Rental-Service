@@ -13,10 +13,10 @@ class Vehicle:
 
     #display function
     def display_info(self):
-        print()
+        print(f"{self.brand} {self.model}, Year: {self.year}, Rental Price: ${self.get__rental_price()}/day")
 
     def calculate_rental_cost(self,days):
-        return self.rental_price_per_day * days
+        return self.get_rental_price() * days
 
     #getter
     def get_rental_price(self):
@@ -41,7 +41,7 @@ class Car(Vehicle):
     #display method overrided
     def display_info(self):
         """overrides diplay_info to include capacity"""
-        print()
+        print(f"Car: {self.brand} {self.model}, Year: {self.year}, Seats: {self.seating_capacity}, Rental Price: ${self.get_rental_price()}/day")
 
 #new derived class(bike inherited from Vehicle)    
 class Bike(Vehicle):
@@ -52,7 +52,7 @@ class Bike(Vehicle):
     #override
     def display_info(self):
         """display method updated with engine capacity"""
-        print()
+        print(f"Bike: {self.brand} {self.model}, Year: {self.year}, Engine: {self.engine_capacity}cc, Rental Price: ${self.get_rental_price()}/day")
 
 def show_vehicle_info(vehicle):
     vehicle.display_info()
@@ -68,3 +68,7 @@ show_vehicle_info(bike1)
 # Calculate rental costs
 print(f"Rental cost for {car1.brand} {car1.model} for 3 days: {car1.calculate_rental_cost(3)} $")
 print(f"Rental cost for {bike1.brand} {bike1.model} for 5 days: {bike1.calculate_rental_cost(5)} $")
+
+#Calculate updated rental price 
+
+
