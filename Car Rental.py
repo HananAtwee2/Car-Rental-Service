@@ -61,3 +61,10 @@ def show_vehicle_info(vehicle):
 car1=Car("Toyota","Corolla",2020,50,5)
 bike1=Bike("Yamaha","R1",2019,30,998)
 
+#display their details
+show_vehicle_info(car1)
+show_vehicle_info(bike1)
+
+# Calculate rental costs
+print(f"Rental cost for {car1.brand} {car1.model} for 3 days: {car1.calculate_rental_cost(3)} $")
+print(f"Rental cost for {bike1.brand} {bike1.model} for 5 days: {bike1.calculate_rental_cost(5)} $")
