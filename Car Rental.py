@@ -25,6 +25,8 @@ class Vehicle:
             print("Price must be positive.")
 
 
+
+
 #new class (inherits from Vehicle)            
 class Car(Vehicle):
 
@@ -37,6 +39,8 @@ class Car(Vehicle):
     def display_info(self):
         """overrides diplay_info to include capacity"""
         print(f"Car: {self.brand} {self.model}, Year: {self.year}, Seats: {self.seating_capacity}, Rental Price: ${self.get_rental_price()}/day")
+
+
 
 #new derived class(bike inherited from Vehicle)    
 class Bike(Vehicle):
@@ -51,6 +55,11 @@ class Bike(Vehicle):
 
 def show_vehicle_info(vehicle):
     vehicle.display_info()
+
+
+
+
+
 
 #create objects
 car1=Car("Toyota","Corolla",2020,50,5)
