@@ -70,5 +70,5 @@ print(f"Rental cost for {car1.brand} {car1.model} for 3 days: {car1.calculate_re
 print(f"Rental cost for {bike1.brand} {bike1.model} for 5 days: {bike1.calculate_rental_cost(5)} $")
 
 #Calculate updated rental price 
-
-
+car1.set_rental_price(55)
+print(f"\nUpdated rental price for {car1.brand} {car1.model}: {car1.get_rental_price()}$/day")
